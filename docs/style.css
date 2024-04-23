@@ -1,0 +1,89 @@
+:root {
+    --color-fuente-principal: #00ff6e;
+    --color-fondo-principal: #05a8b1;
+    --color-enlace: #fdd700;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Esto es para que los títulos sean en negrita */
+    color: #fdd700;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-fuente-principal);
+    background-color: var(--color-fondo-principal);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #009879;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+tr {
+    background-color: #f3f3f3;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+a {
+    color: var(--color-enlace);
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+img, iframe {
+    max-width: 100%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+  /* Clases utilitarias */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+.text-bold { font-weight: bold; }
+.text-italic { font-style: italic; }
+.margin-top-10 { margin-top: 10px; }
+.padding-10 { padding: 10px; }
+.border-round { border-radius: 5px; }
+.display-block { display: block; }
+  /* Agrega más clases utilitarias según tus necesidades */
