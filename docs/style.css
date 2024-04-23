@@ -1,5 +1,5 @@
 :root {
-    --color-fuente-principal: #00ff6e;
+    --color-fuente-principal: #ffaa00;
     --color-fondo-principal: #05a8b1;
     --color-enlace: #fdd700;
 }
@@ -25,7 +25,7 @@ table {
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px rgba(248, 0, 166, 0.419);
 }
 
 th,
@@ -36,25 +36,25 @@ td {
 }
 
 th {
-    background-color: #009879;
+    background-color: #006aff;
     color: #ffffff;
     text-transform: uppercase;
 }
 
 tr {
-    background-color: #f3f3f3;
+    background-color: #fffb00;
 }
 
 tr:nth-of-type(even) {
-    background-color: #f9f9f9;
+    background-color: #fff200;
 }
 
 tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid #03a7d0;
 }
 
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: #fff200;
 }
 
 
