@@ -25,14 +25,14 @@ table {
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
-    box-shadow: 0 0 20px rgba(248, 0, 166, 0.419);
+    box-shadow: 0 0 20px rgba(252, 117, 28, 0.419);
 }
 
 th,
 td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #60016d;
 }
 
 th {
