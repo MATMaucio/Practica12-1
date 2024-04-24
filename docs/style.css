@@ -1,89 +1,82 @@
+/* Estableciendo variables de colores basadas en la temática de la serie */
 :root {
-    --color-fuente-principal: #ffaa00;
-    --color-fondo-principal: #05a8b1;
-    --color-enlace: #fdd700;
+    --color-fondo-principal: #0b3d91; 
+    --color-acento: #76bef9; 
+    --color-fuente-principal: #ffffff; 
+    --color-fuente-secundario: #d6e4f0; 
+    --color-enlace: #49a6e9; 
+    --color-enlace-hover: #f1c40f; 
 }
-
-h1, h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* Esto es para que los títulos sean en negrita */
-    color: #fdd700;
-}
-
 
 body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: var(--color-fuente-principal);
     background-color: var(--color-fondo-principal);
+    line-height: 1.6;
 }
 
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--color-acento);
+}
+
+a {
+    color: var(--color-enlace);
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+a:hover {
+    color: var(--color-enlace-hover);
+}
+
+/* Estilos para la tabla */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(252, 117, 28, 0.419);
+    background-color: var(--color-fondo-principal);
+    color: var(--color-fuente-secundario);
 }
 
 th,
 td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #60016d;
+    border-bottom: 1px solid var(--color-acento);
 }
 
 th {
-    background-color: #b3035e;
-    color: #ffffff;
-    text-transform: uppercase;
+    background-color: var(--color-acento);
+    color: var(--color-fuente-principal);
 }
 
 tr {
-    background-color: #fffb00;
+    background-color: var(--color-fondo-principal);
 }
 
 tr:nth-of-type(even) {
-    background-color: #fff200;
-}
-
-tr:last-of-type {
-    border-bottom: 2px solid #03a7d0;
+    background-color: #0a2e6c; 
 }
 
 tr:hover {
-    background-color: #fff200;
-}
-
-
-a {
-    color: var(--color-enlace);
-}
-
-a:hover {
-    color: #ff6600;
+    background-color: #163a5f; 
 }
 
 img, iframe {
     max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.width-full {
-    width: 100%;
-}
-
-  /* Clases utilitarias */
+/* Clases utilitarias */
 .text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+.font-bold { font-weight: bold; }
+.mb-1 { margin-bottom: 1rem; }
 .text-uppercase { text-transform: uppercase; }
-.text-lowercase { text-transform: lowercase; }
-.text-bold { font-weight: bold; }
-.text-italic { font-style: italic; }
-.margin-top-10 { margin-top: 10px; }
-.padding-10 { padding: 10px; }
-.border-round { border-radius: 5px; }
-.display-block { display: block; }
-  /* Agrega más clases utilitarias según tus necesidades */
+.hidden { display: none; }
+.padding-container { padding: 2rem; }
+.img-responsive { width: 100%; height: auto; }
+.btn-primary { background-color: var(--color-acento); color: var(--color-fuente-principal); padding: 0.5rem 1rem; border: none; border-radius: 0.3rem; cursor: pointer; }
+.shadow { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+.rounded { border-radius: 0.5rem; }
